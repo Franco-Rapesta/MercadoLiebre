@@ -1,0 +1,268 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: whitesmoke;
+}
+    
+.main-header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+.logo {
+    width: 200px;
+
+}
+
+.copy-header {
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.iconoDelMedio {
+    
+        background-color: #03264C;
+        color:#ffffff;
+        display:block;
+        max-width: 50px;
+        padding: 15px 0;
+        border-radius: 8px;
+        text-align:center;
+        font-size: 18px;
+        margin:auto;
+    }
+
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-navbar li {
+    margin: 0 5px;
+}
+
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+
+}
+
+@media (min-width:768px) {
+    .main-header-top-bar {
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .iconoDelMedio{
+        display: none;  
+    }
+    .main-navbar{
+        display: flex;
+       
+        justify-content: space-between;
+    
+    }
+    
+        
+
+}   
+
+
+
+@media (min-width: 1200px){
+    .logo{
+        width: 300px;
+    }
+    .main-navbar {
+        margin-top: 50px;
+    }
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+        margin:auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+        
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar a {
+        font-size: 19px;
+    }
+    .copy-header{
+        max-width: none;
+        margin: 0 ; 
+    }   
+}    
+
+
+footer {
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20%;
+    
+   
+}  
+
+
+.titulosFooter {
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.7;
+}   
+
+.contenidoFooter {
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.5;
+    
+}   
+
+
+.copy {
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.4;
+    margin-top: 10%;
+    
+}
+
+ main {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.descuento {
+    color: lightgreen;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}   
+
+
+.precioDescuentoEnvioUltima {
+    
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    margin:auto;
+    margin-bottom: 10px;
+    
+    
+}
+
+.precioDescuentoEnvioOfertas {
+    
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    
+    
+}
+
+.cafetera {
+
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    margin:auto;
+    margin-bottom: 5px;
+    
+}
+
+.samsung {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    margin:auto;
+    margin-bottom: 5px;
+}
+
+.tele {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    margin:auto;
+    margin-bottom: 5px;
+    margin-left: 20%;
+    
+}
+
+.mac {
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    margin:auto;
+    margin-bottom: 5px;
+    margin-left: 20%;
+}
+
+
+.titulosOfertas {
+    color: grey;
+    margin-left: 35%;
+    
+}
+
+.titulosUltima {
+    color: grey;
+}
+
+
+.titulosProductos {
+    color:rgb(172, 172, 172)
+}
+
+@media (max-width: 768px){
+        main{
+        flex-direction: column;
+        }
+        .titulosOfertas{
+            margin:auto
+        }
+        .mac{
+            margin: auto;
+        }
+        .tele{
+            margin:auto;
+            margin-top: 5%;
+            
+            
+        }
+        .precioDescuentoEnvioOfertas{
+            margin: auto;
+            margin-bottom: 3%;
+        }
+        .footer-box {
+            margin-right: 9.55%;
+            margin-left: 10%;
+            background-color: white;
+            font-size: 90%;
+        }
+}
